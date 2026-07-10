@@ -1,0 +1,7 @@
+{:company/legal-name "Coterra Energy Inc."
+ :company/lei "FCNMH6O7VWU7LHXMK351"
+ :company/jurisdiction "US-DE"
+ :company/website "https://www.coterra.com"
+ :company/ticker "NYSE:CTRA"
+ :itonami.blueprint/robotics false
+ :required-technologies [:identity :audit-ledger]}
