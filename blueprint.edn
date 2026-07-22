@@ -4,4 +4,5 @@
  :company/website "https://www.coterra.com"
  :company/ticker "NYSE:CTRA"
  :itonami.blueprint/robotics false
- :required-technologies [:identity :audit-ledger]}
+ :required-technologies [:identity :audit-ledger]
+ :itonami.blueprint/maturity :implemented}
