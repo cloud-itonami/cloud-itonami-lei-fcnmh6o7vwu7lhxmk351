@@ -34,7 +34,7 @@ actor — it proposes or executes nothing on Coterra Energy Inc.'s behalf.
   `[<doc-id> :attr value <tx> :add]`. See `NOTICE` for copyright/attribution
   of the archived third-party text.
 - `facts.edn` — 18 verified registry facts with per-fact provenance. **Generated** — see below.
-- `scripts/verify-facts.cljs` — re-fetches every source `facts.edn` cites and fails if
+- `scripts/verify-facts.cljk` — re-fetches every source `facts.edn` cites and fails if
   the live record disagrees. Vendored from `com-junkawasaki/root`
   (`scripts/lei-verify-facts.cljs`); fix issues in the canonical and re-vendor.
 - `blueprint.edn` — machine-readable company identity record.
@@ -47,8 +47,8 @@ out of a public registry response whose URL and retrieval time sit next to the
 value:
 
 ```
-nbb scripts/verify-facts.cljs           # check the recorded facts against the live sources
-nbb scripts/verify-facts.cljs --write   # re-fetch and rewrite facts.edn
+nbb scripts/verify-facts.cljk           # check the recorded facts against the live sources
+nbb scripts/verify-facts.cljk --write   # re-fetch and rewrite facts.edn
 ```
 
 Eleven GLEIF/ISO URLs were fetched and eighteen facts recorded — the LEI record
